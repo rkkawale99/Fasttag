@@ -1,0 +1,99 @@
+.app-background {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef5fb 0%, #f8fafc 42%, #edf1f5 100%);
+}
+
+.app-panel {
+  max-width: 1180px;
+  padding: 32px;
+  border: 1px solid #d9e2ec;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 24px 60px rgba(31, 50, 74, 0.12);
+}
+
+.upload-card {
+  padding: 20px;
+  border: 1px solid #d7e0ea;
+  border-radius: 14px;
+  background: #f8fbfd;
+}
+
+.selected-file {
+  min-width: 230px;
+  overflow-wrap: anywhere;
+}
+
+.summary-box {
+  min-width: 230px;
+  padding: 16px 18px;
+  border: 1px solid #cfdbe7;
+  border-radius: 14px;
+  background: #f8fbfd;
+}
+
+.summary-label {
+  display: block;
+  color: #6c7a89;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.summary-box strong {
+  display: block;
+  margin-top: 4px;
+  color: #17324d;
+  font-size: 1.45rem;
+}
+
+.preview-table-wrap {
+  border: 1px solid #d7e0ea;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.preview-table-wrap table {
+  min-width: 980px;
+}
+
+.preview-table-wrap thead th {
+  color: #fff;
+  background: #1c4870;
+  border-color: #315f89;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+.amount-cell {
+  font-variant-numeric: tabular-nums;
+}
+
+.table-total-row td {
+  background: #e2ebf4 !important;
+  font-weight: 800;
+}
+
+.btn-primary {
+  background-color: #1c5d99;
+  border-color: #1c5d99;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #164d80;
+  border-color: #164d80;
+}
+
+@media (max-width: 768px) {
+  .app-panel {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .summary-box,
+  .selected-file {
+    width: 100%;
+    min-width: 0;
+  }
+}

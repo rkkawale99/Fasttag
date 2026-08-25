@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <title>परिशिष्ट - १</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      background-color: #fff;
+    }
+    
+    .invoice-container {
+      width: 270mm; /* Sized explicitly for Landscape A4 minus margins */
+      padding: 10mm;
+      box-sizing: border-box;
+    }
+
+    .meta-header {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      page-break-inside: auto;
+    }
+
+    tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+
+    th, td {
+      border: 0.35mm solid #000;
+      padding: 6px 4px;
+      font-size: 11px;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: 700;
+      text-align: center;
+      white-space: pre-line; /* Allows \n breaks in header cells */
+    }
+
+    .center-text { text-align: center; }
+    .right-text { text-align: right; }
+    
+    .total-row {
+      background-color: #eaeaea;
+      font-weight: 700;
+    }
+
+    /* Fixed Column Width Allocations mimicking your layout specs */
+    th:nth-child(1), td:nth-child(1) { width: 16%; } /* मार्ग */
+    th:nth-child(2), td:nth-child(2) { width: 10%; } /* ई-टॅग? */
+    th:nth-child(3), td:nth-child(3) { width: 18%; } /* नाका नाव */
+    th:nth-child(4), td:nth-child(4) { width: 10%; } /* ई-टॅग रक्कम */
+    th:nth-child(5), td:nth-child(5) { width: 10%; } /* रोखीने? */
+    th:nth-child(6), td:nth-child(6) { width: 18%; } /* नाका नाव २ */
+    th:nth-child(7), td:nth-child(7) { width: 10%; } /* रोख रक्कम */
+    th:nth-child(8), td:nth-child(8) { width: 8%; }  /* बस संख्या */
+  </style>
+</head>
+<body>
+
+  <div class="invoice-container" id="pdf-content">
+    <div class="meta-header">
+      <div><strong>परिशिष्ट - १</strong></div>
+      <div><strong>रा.प.श्रीगोंदा आगार</strong></div>
+      <div id="statement-month">माहे-एप्रिल २०२६</div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>मार्ग</th>
+          <th>ई-टॅग द्वारे<br>पथकर भरण्यात<br>येतो किंवा नाही</th>
+          <th>पथकर नाक्याचे नाव व<br>पथकर नाका कोणाच्या<br>अधिपत्याखाली येतो</th>
+          <th>ई-टॅग द्वारे<br>भरण्यात आलेली<br>एकूण रक्कम</th>
+          <th>रोखीने पथकर<br>भरण्यात येतो की<br>नाही</th>
+          <th>पथकर नाक्याचे नाव व<br>पथकर नाका कोणाच्या<br>अधिपत्याखाली येतो</th>
+          <th>रोखीने भरण्यात<br>आलेली एकूण<br>रक्कम</th>
+          <th>बस<br>संख्या</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        </tbody>
+      <tfoot>
+        <tr class="total-row">
+          <td class="center-text">एकूण</td>
+          <td></td>
+          <td></td>
+          <td id="total-etag" class="right-text">0</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td id="total-buses" class="right-text">0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+</body>
+</html>

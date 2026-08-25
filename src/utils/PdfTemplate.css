@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+.invoice-container {
+    width: 200mm;
+    /* padding: 10mm; */
+    box-sizing: border-box;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    color: black;
+  
+}
+
+.meta-header {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: auto;
+}
+
+tr {
+    page-break-inside: avoid;
+}
+
+th,
+td {
+    border: 0.35mm solid black;
+    padding: 3px 2px;
+    font-size: 11px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+th {
+    
+    text-align: center;
+    font-weight: bold;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.total-row {
+    font-weight: bold;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 8%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 6%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 10%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 9%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 8%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 10%;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+    width: 10%;
+}
+
+th:nth-child(8),
+td:nth-child(8) {
+    width: 8%;
+}
